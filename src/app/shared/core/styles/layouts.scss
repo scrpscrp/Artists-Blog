@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: url(../../../../assets/images/bg.jpg);
+    background-size: 50px;
+    color: #fafafa;
+    font-family: raleway-c;
+    overflow-x: hidden;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --color-header: #f4efec;
+    --color-text: #c6cdc3;
+    --gallery-gap: calc(var(--index) * 10);
+}

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: raleway-c;
+    src: url(../../assets/fonts/raleway-regular.woff2);
+}
+
+@font-face {
+    font-family: outfit-c;
+    src: url(../../assets/fonts/outfit-regular.woff2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: outfit-c;
+}
+
+.content,
+.hero,
+.main-header,
+.gallery>* {
+    will-change: transform;
+}
+
+.main-header {
+    height: 100vh;
+
+    .main-title {
+        font-size: calc(var(--index) * 8);
+        position: absolute;
+        z-index: -100;
+        width: min-content;
+        bottom: 12vh;
+    }
+}
+
+.hero {
+    width: calc(var(--index) * 36);
+    position: absolute;
+    z-index: -100;
+    left: 37vw;
+    top: 8vh;
+}
+
+.container {
+    padding: 0 7vw;
+}
+
+
+
+.gallery {
+    display: flex;
+    padding: calc(var(--index) * 8) 0;
+
+    img {
+        cursor: pointer;
+    }
+
+    .gallery__item {
+        max-width: calc(var(--index) * 21);
+        margin-bottom: var(--gallery-gap);
+        max-height: 90vh;
+        border-radius: 8px;
+    }
+
+    .gallery__left {
+        margin-top: calc(var(--index) * 1);
+    }
+
+    .gallery__right {
+        margin: 0;
+        // margin-top: calc(var(--gallery-gap) * 1);
+    }
+
+    .text-block {
+        color: var(--color-text);
+        position: relative;
+    }
+
+    .text-block_h {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: var(--color-header);
+        margin-bottom: 1.5rem;
+    }
+
+    .text-block__p {
+        line-height: 1rem;
+    }
+
+}
+
+.gallery>* {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
